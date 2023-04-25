@@ -1,19 +1,37 @@
-# Exploration of IMDB_Dataset
+# IMDB Data Analysis with Python Pandas
 
-Using the IMDB data set we have successfully -
-1. Cleaned the data, removed unwanted columns and checked size of the data
+This repository contains Python Pandas code for exploring the IMDB dataset. The dataset consists of information about movies, including their titles, directors, ratings, release years, and countries.
 
-2. Merged Dataframes using joins.
+## Data Exploration
 
-3. Used pandas to gathered insights from the data by satisfying sample KPIs such as best directors, querying non-usa movies,basic statistical queries etc.
+The code in this repository explores the dataset in several ways, including:
 
-Steps to get started - 
+- Merging the data into one DataFrame
+- Cleaning the data by removing the last unknown character from the movie titles
+- Finding the directors with the most movies
+- Checking for empty columns
+- Saving all movies directed by Christopher Nolan in a variable
+- Calculating the average rating of Christopher Nolan's movies
+- Selecting non-USA movies made after 1960 by Hayao Miyazaki
+- Describing the basic statistics of the dataset
+- Finding the year that produced the most movies
 
-1. Keep all the files in one folder 
+## Dataset
 
-2. Now run the main.py file and look at the output on the screen
+The IMDB dataset is available in an Excel file called `imdb.xlsx`. The file contains three separate sheets: `imdb`, `directors`, and `countries`. The data is merged into one DataFrame using the `merge()` function in Pandas.
 
+## Dependencies
 
-Thanks and Regards,
+This code requires the Pandas library for Python. You can install it using pip:
+
+```
+pip install pandas
+```
+
+## Usage
+
+To use this code, simply download or clone this repository and run the Python script `imdb_analysis.py`. The script will read the `imdb.xlsx` file and perform the data exploration tasks described above.
+
+Best of Luck,
 
 Aayush Doshi.
